@@ -2,3 +2,4 @@ vite.config.ts
 .yarn
 dist
 node_modules
+commitlint.config.js
