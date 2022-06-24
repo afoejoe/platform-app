@@ -1,1 +1,4 @@
 vite.config.ts
+.yarn
+dist
+node_modules
