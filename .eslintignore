@@ -3,3 +3,6 @@ vite.config.ts
 dist
 node_modules
 commitlint.config.js
+jest.config.ts
+coverage
+__mocks__/
