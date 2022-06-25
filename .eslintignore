@@ -6,3 +6,5 @@ commitlint.config.js
 jest.config.ts
 coverage
 __mocks__/
+
+index.d.ts
