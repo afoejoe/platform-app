@@ -1,14 +1,19 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "node": true
   },
-  "extends": ["plugin:react/recommended", "airbnb", "airbnb-typescript"],
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
+  ],
   "globals": {
     "React": "readonly"
   },
   "parser": "@typescript-eslint/parser",
-
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -17,7 +22,7 @@
     "tsconfigRootDir": "./",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "rules": {
     "no-unused-vars": [
       "warn",
@@ -26,8 +31,15 @@
         "argsIgnorePattern": "^_"
       }
     ],
-    "import/no-cycle": [2, { "maxDepth": 1 }],
+    "no-plusplus": 0,
+    "import/no-cycle": [
+      0,
+      {
+        "maxDepth": 1
+      }
+    ],
     "implicit-arrow-linebreak": ["off", "below"],
-    "@typescript-eslint/no-unused-vars": ["off"]
+    "@typescript-eslint/no-unused-vars": ["off"],
+    "operator-linebreak": ["off"]
   }
 }

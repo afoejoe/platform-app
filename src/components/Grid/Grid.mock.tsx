@@ -1,6 +1,6 @@
 import { IGrid } from './Grid';
 
-const base:IGrid = {
+const base: IGrid = {
   width: 1000,
   rows: null,
 };

@@ -1,4 +1,4 @@
-const base:any = {
+const base: any = {
   actors: 'BaseTemplate',
 };
 
