@@ -20,11 +20,19 @@ export type Actor = TPlayer | TLava | TCoin;
 export enum ValidCharConfig {
   player = '@',
   wall = '#',
-  lavalString = '=',
+  lavaHorizontal = '=',
   empty = '.',
-  lavaHorizontal = '+',
+  lavaString = '+',
   lavaVertical = '|',
   lavaDropping = 'v',
   coin = 'o',
 }
-export type LevelChar = Record<ValidCharConfig, Actor | 'empty' | 'lava' | 'wall'>;
+export type LavaChar = Omit<
+  ValidCharConfig,
+  'player' | 'wall' | 'empty' | 'coin'
+>;
+
+export type LevelChar = Record<
+  ValidCharConfig,
+  Actor | 'empty' | 'lava' | 'wall'
+>;
